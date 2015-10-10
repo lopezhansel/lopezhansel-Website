@@ -18,7 +18,7 @@ app.get('/', function(req, res) {
 });
 
 
-var port = 3001;
+var port = 3000;
 app.listen(port, function() {
-	console.log('started Lopezhansel.com on port: ', port);
+	console.log('started Lopezhansel.com on port: ', port, Date());
 });

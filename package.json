@@ -2,7 +2,7 @@
   "name": "lopezhansel.com",
   "version": "1.0.0",
   "description": "My Domain displaying everything about me and what im up to currentl",
-  "main": "index.js",
+  "main": "expressMain.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
