@@ -1,4 +1,42 @@
-body{
+/*body{
 	background-image: url(http://trinitycycles.com.au/Images/Layout/Carbon-Fibre-Background-Top.png)  ;
 	color: white;
+}*/
+
+.pitch{
+	background: red;
 }
+.contact{
+	background: blue;
+	/*padding: 50px; will  mess with responsive*/
+}
+
+
+
+/*
+shades of blue
+00BFBF
+007F7F
+00FFFF
+004040
+00E5E5
+
+
+0D7FFF
+0CAEE8
+00FFFF
+0CE8AA
+0DFF76
+
+------------
+#0084FF
+002140
+0077E5
+00427F
+0063BF
+
+00427F
+4CA9FF
+0084FF
+26547F
+006ACC*/
