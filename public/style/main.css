@@ -1,42 +1,59 @@
-/*body{
-	background-image: url(http://trinitycycles.com.au/Images/Layout/Carbon-Fibre-Background-Top.png)  ;
-	color: white;
-}*/
+.homeWrapper{
+	background: #0077E5;
+}
+.navbar{
+	background: #004040;
 
-.pitch{
-	background: red;
+}
+
+.jumbo{
+	background: #00E5E5;
+}
+.jumbo .container{
+	background: #004040;
+
+}
+.jumbo img{
+	/*margin-left: 50px;*/
+	padding: 50px;
+	width: 100%;
+	height: auto;
+	border-radius: 490px;
+}
+.jumbo .intro{
+	padding: 50px;
+	color: #00BFBF
+}
+.summary{
+
+
 }
 .contact{
-	background: blue;
-	/*padding: 50px; will  mess with responsive*/
+	
 }
-
-
-
 /*
-shades of blue
-00BFBF
-007F7F
-00FFFF
-004040
-00E5E5
 
+Shaded of BLue
+#00BFBF
+#007F7F
+#00BFBF
+#004040
+#00E5E5
 
-0D7FFF
-0CAEE8
-00FFFF
-0CE8AA
-0DFF76
-
+#0D7FFF
+#0CAEE8
+#00FFFF
+#0CE8AA
+#0DFF76
 ------------
 #0084FF
-002140
-0077E5
-00427F
-0063BF
+#002140
+#0077E5
+#00427F
+#0063BF
 
-00427F
-4CA9FF
-0084FF
-26547F
-006ACC*/
+#00427F
+#4CA9FF
+#0084FF
+#26547F
+#006ACC*/
