@@ -17,7 +17,9 @@ app.get('/', function(req, res) {
 	});
 });
 
-
+app.get('/mapMe',function  (req,res) {
+	res.send('Welcome to MapMe');
+});
 var port = 3000;
 app.listen(port, function() {
 	console.log('started Lopezhansel.com on port: ', port, Date());
