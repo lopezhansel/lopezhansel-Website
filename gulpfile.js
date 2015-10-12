@@ -42,24 +42,29 @@
 
 // ------------------------------------------------------------
 // PLAYING WITH Watch
-var gulp = require('gulp')
-	uglify = require('gulp-uglify');
+var gulp = require('gulp');
+var jade = require('gulp-jade');
 
 
 
-gulp.task('scripts',function(){
-	// console.log('hello');
-	gulp.src('js/*.js')
-	.pipe(ugligy())
-	.pipe(gulp.dest('/build/js'));
+gulp.task('jade',function(){
+	console.log('hello');
+	gulp.src('public/**/*.jade')
+	.pipe(jade({
+      pretty: true
+    }))
+	.pipe(gulp.dest('public/'));
+
+
 });
+
 
 gulp.task('styles',function  () {
 	console.log('running styles');
 });
 	
 gulp.task('watch',function  () {
-	gulp.watch('js/*.js',['scripts']);
+	gulp.watch('public/**/*.jade',['jade']);
 })
 
-gulp.task('default',['scripts','styles','watch']);
+gulp.task('default',['jade','styles','watch']);

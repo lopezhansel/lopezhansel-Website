@@ -4,23 +4,23 @@ app.config(function($routeProvider){
   $routeProvider
     .when('/', { 
       controller: 'homeCtrl', 
-      templateUrl: './app/lopezhansel/homeView.html' 
+      templateUrl: './views/homeView2.html' 
     })
      .when('/resume', { 
       controller: 'homeCtrl', 
-      templateUrl: './app/lopezhansel/resumeView.html' 
+      templateUrl: './views/resumeView.html' 
     })
     .when('/home', { 
       controller: 'homeCtrl', 
-      templateUrl: './app/lopezhansel/homeView.html' 
+      templateUrl: './views/homeView2.html' 
     })
      .when('/blog', { 
       controller: 'homeCtrl', 
-      templateUrl: './app/lopezhansel/blogView.html' 
+      templateUrl: './views/blogView.html' 
     })
      .when('/myWork', { 
       controller: 'homeCtrl', 
-      templateUrl: './app/lopezhansel/myWorkView.html' 
+      templateUrl: './views/myWorkView.html' 
     })
     .otherwise({ 
       redirectTo: '/' 
