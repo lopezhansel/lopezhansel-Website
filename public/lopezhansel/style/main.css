@@ -36,8 +36,9 @@
 	padding: 50px;
 	width: 100%;
 	height: auto;
-	border-radius: 490px;
-	
+	border-radius: 460px;
+	/*background: red;*/
+
 }
 .jumbo .intro{
 	padding: 50px;
