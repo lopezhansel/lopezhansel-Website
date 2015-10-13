@@ -1,3 +1,30 @@
+/*
+
+#007F7F;
+#00BFBF;
+#004040;
+#00E5E5;
+
+#0D7FFF;
+#0CAEE8;
+#00FFFF;
+#0CE8AA;
+#0DFF76;
+
+
+#0084FF;
+#002140;
+#0077E5;
+#00427F;
+#0063BF;
+
+#00427F;
+#4CA9FF;
+#0084FF;
+#26547F;
+#006ACC;
+
+*/
 @font-face {
   font-family: 'pirulen';
   src: url('/style/pirulen.ttf');
@@ -70,37 +97,3 @@
 /*==========================================*/
 
 
-/*.fa-border {
-    padding: .2em .25em .15em;
-    border: solid .08em #eee;
-    border-radius: .1em;
-
-}*/
-/*
-
-Shaded of BLue
-C
-#007F7F;
-#00BFBF;
-#004040;
-#00E5E5;
-
-#0D7FFF;
-#0CAEE8;
-#00FFFF;
-#0CE8AA;
-#0DFF76;
-------------
-#0084FF;
-#002140;
-#0077E5;
-#00427F;
-#0063BF;
-
-#00427F;
-#4CA9FF;
-#0084FF;
-#26547F;
-#006ACC;
-
-*/
