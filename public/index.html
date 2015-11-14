@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="lopezHansel">
     <head>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-animate.min.js"></script>
@@ -20,19 +20,20 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.0-rc2/angular-material.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="./style/ng-animate.css">
-        <link rel="stylesheet" type="text/css" href="./style/style.css">
+        <!-- <link rel="stylesheet" type="text/css" href="./style/ng-animate.css"> -->
+        <link rel="stylesheet" type="text/css" href="./style/main.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
         <meta name="viewport" content="initial-scale=1" />
     </head>
 
-    <body>
+    <body ng-controller="mainController">
         <h1>Welcome To lopezhansel.com</h1>
+        <h2>{{hello}}</h2>
 
     
         
 
-        <!-- // <script src="./js/main.js"></script> -->
-        <!-- // <script src="./js/controllers/mainController.js"></script> -->
+        <script src="./js/main.js"></script>
+        <script src="./js/controllers/mainController.js"></script>
     </body>
 </html>
