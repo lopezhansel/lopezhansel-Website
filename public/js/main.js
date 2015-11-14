@@ -26,7 +26,7 @@ app.config(function($routeProvider) {
 
 //http://mcg.mbitson.com/#/
 //http://angular-md-color.com/#/
-https://color.adobe.com/create/color-wheel/?base=2&rule=Monochromatic&selected=4&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.2232735100206971,0.3578887519836131,0.45294117647058824,0.012651562479450724,0.15349265268859452,0.2529411764705882,0.07539105533166396,0.1208455526178434,0.15294117647058825,0.11989978676257283,0.31510552883420156,0.45294117647058824,0.3711559647097302,0.5949319513493828,0.7529411764705882&swatchOrder=0,1,2,3,4
+// https://color.adobe.com/create/color-wheel/?base=2&rule=Monochromatic&selected=4&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.2232735100206971,0.3578887519836131,0.45294117647058824,0.012651562479450724,0.15349265268859452,0.2529411764705882,0.07539105533166396,0.1208455526178434,0.15294117647058825,0.11989978676257283,0.31510552883420156,0.45294117647058824,0.3711559647097302,0.5949319513493828,0.7529411764705882&swatchOrder=0,1,2,3,4
 
 app.config(function($mdThemingProvider) {
   $mdThemingProvider.definePalette('darkBlue', {
@@ -78,4 +78,29 @@ app.config(function($mdThemingProvider) {
   });
   $mdThemingProvider.theme('default')
     .accentPalette('lightBlue');
+});
+
+
+app.config(function($mdThemingProvider) {
+  var customBackground = {
+      '50': '#54d8cc',
+      '100': '#3fd4c6',
+      '200': '#2ecbbd',
+      '300': '#29b7aa',
+      '400': '#25a296',
+      '500': '#208D83',
+      '600': '#1b7870',
+      '700': '#17635c',
+      '800': '#124f49',
+      '900': '#0d3a36',
+      'A100': '#F8F8F8', //#E9EAED // F8F8F8 background
+      'A200': '#7ee2d9', 
+      'A400': '#93e6df',
+      'A700': '#082522'
+  };
+
+    $mdThemingProvider.definePalette('customBackground', customBackground);
+   $mdThemingProvider.theme('default').backgroundPalette('customBackground')
+
+
 });
