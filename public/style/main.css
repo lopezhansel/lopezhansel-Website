@@ -29,8 +29,12 @@ html , body {
 	font-family: 'Montserrat', sans-serif;
 }
 .home {
+	    background: #E9EAED;
+}
+.card-wrapper{
     margin: 100px;
     margin-top: 200px;
+
 }
 /*.wrapper{
 	margin-top: 100px;
@@ -41,6 +45,7 @@ html , body {
 
 }
 .my-card img{
-	height: 200px;
-	width:  200px;
+	height: 400px;
+	width:  400px;
+	border-radius: 300px;
 }
