@@ -30,13 +30,13 @@ app.config(function($routeProvider) {
 
 app.config(function($mdThemingProvider) {
   $mdThemingProvider.definePalette('darkBlue', {
-    '50': 'ffebee',
-    '100': 'ffcdd2',
-    '200': 'ef9a9a',
-    '300': 'e57373',
-    '400': 'ef5350',
-    '500': '002540', // primary
-    '600': '002540',// accent
+    '50': '#ffebee',
+    '100': '#ffcdd2',
+    '200': '#ef9a9a',
+    '300': '#e57373',
+    '400': '#ef5350',
+    '500': '#32474C', // primary // #15585E
+    '600': '#32474C',// accent
     '700': 'd32f2f',
     '800': 'c62828',
     '900': 'b71c1c',
@@ -67,14 +67,14 @@ app.config(function($mdThemingProvider) {
     '800': 'c62828',
     '900': 'b71c1c',
     'A100': 'ff8a80',
-    'A200': '5F96C0', // Secondary
+    'A200': '#14FDF9', // Secondary
     'A400': 'ff1744',
     'A700': 'd50000',
-    'contrastDefaultColor': 'light',    
+    'contrastDefaultColor': 'dark',    
                                         
     'contrastDarkColors': ['50', '100', 
      '200', '300', '400', 'A100'],
-    'contrastLightColors': undefined    
+    'contrastLightColors': "true"   
   });
   $mdThemingProvider.theme('default')
     .accentPalette('lightBlue');
