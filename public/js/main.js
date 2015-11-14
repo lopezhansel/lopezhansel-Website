@@ -3,11 +3,11 @@ var app = angular.module('lopezHansel',['ngAnimate', 'ngMaterial', 'ngRoute']);
 app.config(function($routeProvider) {
   $routeProvider
     .when('/home', {
-      controller: 'mainController',
+      controller: 'mainController as main',
       templateUrl: 'views/homeView.html'
     })
     .when('/resume', {
-      controller: 'mainController',
+      controller: 'mainController as main',
       templateUrl: 'views/resumeView.html'
     })
     .when('/portfolio', {

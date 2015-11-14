@@ -1,10 +1,7 @@
-app.controller('mainController', ['$scope',  '$routeParams', '$mdMedia', '$mdDialog', '$mdToast', "$http", "$interval", "$location", "$timeout", 
-	function($scope, $routeParams, $mdMedia, $mdDialog, $mdToast, $http, $interval, $location, $timeout) {
-	$scope.redirect = function(urlStr) {
-		console.log("hello");
-		$location.path(urlStr);
-	};
+app.controller('mainController', [ '$routeParams', '$mdMedia', '$mdDialog', '$mdToast', "$http", "$interval", "$location", "$timeout", 
+	function( $routeParams, $mdMedia, $mdDialog, $mdToast, $http, $interval, $location, $timeout) {
+	main = this;
 
-	$scope.hello = "hello world";
+	main.hello = "hello world";
 		
 }])	;
