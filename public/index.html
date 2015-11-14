@@ -28,12 +28,12 @@
     </head>
     <body ng-controller="indexController as index">
         <div layout="column" layout-fill>
-            <md-toolbar md-scroll-shrink="::true">
+            <md-toolbar md-scroll-shrink="true" class="md-whiteframe-5dp">
             <div class="md-toolbar-tools">
                 <span class="lopezhansel">Lopez Hansel</span>
             </div>
             </md-toolbar>
-                <md-tabs  md-stretch-tabs md-selected="selectedTab" class="md-accent">
+                <md-tabs  md-stretch-tabs md-selected="selectedTab" class="md-accent md-whiteframe-11dp">
                     <md-tab label="Home" ng-click="index.redirect('/home')" ></md-tab>
                     <md-tab label="Resume" ng-click="index.redirect('/resume')" ></md-tab>
                     <md-tab label="Portfolio"  ng-click="index.redirect('/portfolio')"></md-tab>
