@@ -3,15 +3,14 @@
     <head>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-animate.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-aria.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-aria.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.0-rc2/angular-material.min.js"></script>
         <!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script> -->
         <!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-leaflet-directive/0.8.7/angular-leaflet-directive.min.js"></script> -->
         <!-- // <script type="text/javascript", src="https://cdn.socket.io/socket.io-1.1.0.js"></script> -->
         <!-- // <script src="./js/vendors/hanselLib.js"></script> -->
- 
-
+        
         <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" rel="stylesheet" /> -->
         <!-- <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css"> -->
         <!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script> -->
@@ -25,12 +24,25 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
         <meta name="viewport" content="initial-scale=1" />
     </head>
-
-    <body ng-controller="mainController">
-        <ng-view></ng-view>
+    <body ng-controller="indexController">
+        <div layout="column" layout-fill>
+            <md-toolbar md-scroll-shrink="::true">
+            <div class="md-toolbar-tools">
+                <span>lopezHansel.com</span>
+            </div>
+            </md-toolbar>
+                <md-tabs  md-stretch-tabs md-selected="selectedTab" class="md-accent">
+                    <md-tab label="Home" ng-click="redirect('/home')" ></md-tab>
+                    <md-tab label="Resume" ng-click="redirect('/resume')" ></md-tab>
+                    <md-tab label="Porfolio"  ng-click="redirect('/portfolio')"></md-tab>
+                    <md-tab label="Social Media"  ng-click="redirect('/social')"></md-tab>
+                </md-tabs>
+            <ng-view></ng-view>
+            
+        </div>
         
-
         <script src="./js/main.js"></script>
         <script src="./js/controllers/mainController.js"></script>
+        <script src="./js/controllers/indexController.js"></script>
     </body>
 </html>
