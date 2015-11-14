@@ -35,7 +35,7 @@ app.config(function($mdThemingProvider) {
     '200': '#ef9a9a',
     '300': '#e57373',
     '400': '#ef5350',
-    '500': '#32474C', // primary // #15585E
+    '500': '#132834', // primary // #1C3B4E 
     '600': '#32474C',// accent
     '700': 'd32f2f',
     '800': 'c62828',
