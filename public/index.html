@@ -22,24 +22,43 @@
         <!-- <link rel="stylesheet" type="text/css" href="./style/ng-animate.css"> -->
         <link rel="stylesheet" type="text/css" href="./style/main.css">
 
-        <meta name="viewport" content="initial-scale=1" />
-
-        <link href='https://fonts.googleapis.com/css?family=Yellowtail|Lato|Montserrat' rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="initial-scale=1"/>
+        <link href='https://fonts.googleapis.com/css?family=Yellowtail|Lato|Montserrat|' rel='stylesheet' type='text/css'>
     </head>
+
     <body ng-controller="indexController as index">
-        <div layout="column" layout-fill>
-            <md-toolbar md-scroll-shrink="true" class="md-whiteframe-5dp">
-            <div class="md-toolbar-tools">
-                <span class="lopezhansel">Lopez Hansel</span>
-            </div>
-            </md-toolbar>
-                <md-tabs  md-stretch-tabs md-selected="selectedTab" class="md-accent md-whiteframe-11dp">
+
+        <div class="wrapper" layout="column" layout-fill>
+            <md-toolbar md-scroll-shrink class="md-whiteframe-5dp">
+                <div class="md-toolbar-tools">
+                    <span class="lopezhansel">Lopez Hansel</span>
+                </div>
+                <md-tabs md-scroll-shrink  md-selected="selectedTab" class="md-accent md-whiteframe-11dp">   
                     <md-tab label="Home" ng-click="index.redirect('/home')" ></md-tab>
                     <md-tab label="Resume" ng-click="index.redirect('/resume')" ></md-tab>
                     <md-tab label="Portfolio"  ng-click="index.redirect('/portfolio')"></md-tab>
                     <md-tab label="Social Media"  ng-click="index.redirect('/social')"></md-tab>
                 </md-tabs>
-            <ng-view></ng-view>
+            </md-toolbar>
+
+            <md-content>
+                <div class="under-title md-whiteframe-11dp">
+                    <md-card class="md-whiteframe-11dp">
+                        <img class="md-card-image " flex="25" src="./shared/profile2.png" alt="profile Pic">
+                        <md-card-content>
+                            <h2>Testest         </h2>
+                            <p>Javascript Developer</p>
+                        </md-card-content>
+                        <md-card-footer>
+                            Card footer
+                        </md-card-footer>
+                        <div class="md-actions" layout="row" layout-align="start start">
+                           <md-button>content</md-button>
+                         </div>
+                    </md-card>
+                </div >                
+                <ng-view></ng-view>
+            </md-content>
             
         </div>
         
