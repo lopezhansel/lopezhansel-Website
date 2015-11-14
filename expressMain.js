@@ -11,11 +11,10 @@ app.use(bodyParser.urlencoded({
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/', function(req, res) {
-	res.sendFile('index.html', {
-		root: './public'
-	});
+app.get('/',function  (req,res) {
+	res.sendFile('index.html',{root: './public'});
 });
+
 
 app.get('/mapMe',function  (req,res) {
 	res.send('Welcome to MapMe');
