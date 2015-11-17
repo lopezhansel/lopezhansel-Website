@@ -1,4 +1,4 @@
-var app = angular.module('lopezHansel',['ngAnimate', 'ngMaterial', 'ngRoute']); 
+var app = angular.module('lopezHansel',['ngAnimate', 'ngMaterial', 'ngRoute',"ui.prism"]); 
 
 app.config(function($routeProvider) {
   $routeProvider
@@ -104,3 +104,26 @@ app.config(function($mdThemingProvider) {
 
 
 });
+
+angular.module('ui.prism', []).
+    directive('uiPrism', [function() {
+        return {
+            restrict: 'AE',
+            replace: 'true',
+            require: '^ngModel',
+            template: '<pre class="language-{{scriptLanguage}}" ng-class="{\'line-numbers\':lineNumbers}"><code>{{ngModel}}</code></pre>',
+            scope: {
+              ngModel: '=',
+                scriptLanguage: '=',
+                lineNumbers: '='
+            },
+            link: function (scope, element, attrs){
+                scope.$watch('data', function(){
+                    element.ready(function() {
+                        Prism.highlightElement(angular.element(element[0]).find("code")[0]);
+                     });
+                });
+            }
+         }; 
+     }]
+);
