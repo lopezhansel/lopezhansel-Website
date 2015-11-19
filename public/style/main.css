@@ -1,7 +1,7 @@
 .under-title{
 	height: 500px;
 	
-    background: url("http://www.imgbase.info/images/safe-wallpapers/digital_art/3d_landscape/50976_3d_landscape_low_polygon_low_polygon_landscape.jpg"); 
+    background: url("/shared/polygon_landscape.jpg"); 
     /*background: url("https://s-media-cache-ak0.pinimg.com/736x/58/24/23/582423aa3aee694a1f8c730c2b33014f.jpg"); */
     /*background: url("http://www.img.lirent.net/2014/10/Android-Lollipop-wallpapers-Wall1.png"); */
     /*background: url("http://3.bp.blogspot.com/-VIrCHIHrftM/VFpUlB_kpjI/AAAAAAAABXc/OkSnE5aNnJU/s1600/rVFfd91.png"); */
@@ -24,6 +24,7 @@ md-card {
     max-width: 1000px;
     margin-top: 50px;
     margin-bottom: 50px
+    padding: 20px;
 }
 
 .lopezhansel {
